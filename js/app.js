@@ -1,6 +1,6 @@
   import {
     playButtonLeftEl,
-  } from '/js/dom.js'
+  } from '/musicplayer3/js/dom.js'
 
 const song = new Audio();
 
