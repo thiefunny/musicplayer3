@@ -4,7 +4,7 @@ export {
     playButtonLeftEl,
     rightPanel,
     progressBarPercentage,
-    progressBar
+    // progressBar
 }
 
 const coverEl = document.querySelector(".cover__image");

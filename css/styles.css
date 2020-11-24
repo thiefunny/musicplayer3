@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+
+:root {
+    --main: #e3e3e3;
+    /* --text: #333; */
+    --temp: 65;
+    --text: var(--temp), var(--temp), var(--temp);
+    --halftext: #aaa;
+    font-family: 'Share Tech Mono', monospace;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #888
+    color: rgb(var(--text))
 }
 
 .container__app {
-    background: #ff0000;
+    /* background: #ff0000; */
     position: relative;
 }
 
@@ -18,7 +31,7 @@
 .container__panels {
     position: relative;
     display: flex;
-    background: #222;
+    background: var(--main);
 }
 
 .progress__bar {
@@ -36,7 +49,7 @@
 .left__panel {
     position: relative;
     margin: 10px 0 0 0;
-    background: #333;
+    background: var(--main);
     height: 100vh;
     width: 35%;
     text-align: center;
@@ -49,10 +62,12 @@
 .cover__image {
     width: 50%;
     height: auto;
+    border-radius: 0.5rem;
 }
 
 .title__player {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    font-size: 2em
 }
 
 .songs__counter {
@@ -61,6 +76,10 @@
 
 .play__button {
     margin-top: 1rem;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    font-size: larger;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .play__button:hover {
@@ -69,7 +88,7 @@
 
 .right__panel {
     position: relative;
-    background: #555;
+    background: var(--main);
     height: 100vh;
     width: 65%;
     margin: 10px 0 0 0;
@@ -78,52 +97,65 @@
 .play__module {
     /* height: 10rem; */
     width: 100%;
-    background: #111;
+    background: var(--main);
     /* padding-top: 1px;
     padding-bottom: 1px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px dashed var(--halftext);
 }
 
 .play__module__content {
     margin: 0.5rem;
     height: 3rem;
-    background: #888;
+    background: var(--main);
     display: flex;
     width: 100%;
 }
 
 .play__button__right {
+    margin: 0 1em 0 0;
     position: relative;
     width: 5%;
-    background: #000055;
+    background: var(--main);
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border-bottom: 1px dashed var(--halftext); */
 }
 
-.play__button__right:hover {background-color: white
+.play__button__right:hover {
+    background-color: white;
+    cursor: pointer    
 }
 
 .title__area {
     position: relative;
     width: 80%;
-    background: #330055;
+    background: var(--main);
     display: flex;
     align-items: center;
 }
 
 .title__content {}
+
+
+.title__album {
+    /* font-size: 1rem; */
 }
 
-.title__album {}
-
-.title__song {}
+.title__song {
+    font-size: 0.9rem;
+    color: rgba(var(--text), 0.6);
+    /* color: red */
+}
 
 .song__duration {
     width: 20%;
-    background: #003300;
+    font-size: 0.9rem;
+    color: rgba(var(--text), 0.6);
+    background: var(--main);
     display: flex;
     justify-content: right;
     align-items: center;
