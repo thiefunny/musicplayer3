@@ -166,7 +166,7 @@ a {
 
 .playmodulemouseoverbackground {background: #f00;}
 
-@media (max-width:600px)
+@media (max-width:800px)
 {
     /* * {background: red;} */
 
@@ -196,6 +196,37 @@ margin: 0;
 .title__player {
     
 }
+
+/* MEDIA CURLY BRACE!! */
+
+}
+
+@media (max-width:400px)
+{
+ 
+.right__panel, .left__panel, .progress__bar {display: none;}
+body {background-color: #f00;
+  
+}
+
+.easteregg  {
+    /* height: 100vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.easteregg p {
+ width: 100vw;
+ text-align: center;
+ color: white;
+ transform: rotate(270deg) translateX(-100%); 
+ font-size: 5rem;
+ /* background-color: yellowgreen; */
+
+ /* width: 200vw; */
+}
+
 
 /* MEDIA CURLY BRACE!! */
 
