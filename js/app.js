@@ -2,7 +2,7 @@
 
 import {
   songsArr
-} from '/js/songs.js'
+} from 'js/songs.js'
 import {
   coverEl,
   songsCounterEl,
@@ -10,7 +10,7 @@ import {
   rightPanel,
   progressBarPercentage,
   // progressBar
-} from '/js/dom.js'
+} from 'js/dom.js'
 
 let currentlyPlayingSongIndex = 0;
 let selectedIndex = 0;
