@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-
-
 :root {
     --main: #e3e3e3;
     /* --text: #333; */
@@ -75,6 +73,7 @@
 }
 
 .play__button {
+    display: inline;
     margin-top: 1rem;
     border: 0px;
     background-color: rgba(0,0,0,0);
@@ -101,8 +100,8 @@
     /* padding-top: 1px;
     padding-bottom: 1px; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     border-bottom: 1px dashed var(--halftext);
 }
 
@@ -166,3 +165,41 @@ a {
 }
 
 .playmodulemouseoverbackground {background: #f00;}
+
+@media (max-width:600px)
+{
+    /* * {background: red;} */
+
+.cover__image {display: none;}
+
+.container__panels {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* background: var(--main); */
+}
+
+.left__panel {
+    height: auto;
+    width: 100%;
+    margin-top: 2vh;
+}
+.cover {
+margin: 0;    
+}
+.right__panel {width: 100%}
+
+.play__button {display: none;}
+
+.play__button__right {font-size: xx-large; padding-left: 7vw;}
+
+.title__player {
+    
+}
+
+/* MEDIA CURLY BRACE!! */
+
+}
+
+
+
