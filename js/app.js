@@ -3,6 +3,7 @@
 import {
   songsArr
 } from '../js/songs.js'
+
 import {
   coverEl,
   songsCounterEl,
