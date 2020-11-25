@@ -19,12 +19,13 @@ let selectedIndex = 0;
 const song = new Audio();
 
 const setSource = _ => {
-  song.src = `${songsArr[selectedIndex]["url"]}`
+  song.src = `${songsArr[selectedIndex].url}`
 }
 
 setSource();
 
 const playIt = () => {
+  
   if (song.paused) {
       song.play();
   } else {
@@ -46,11 +47,11 @@ const createModule = _ => {
       </div>
       <div class="title__area">
         <div class="title__content">
-          <p class="title__album">${elem["title"]}</p>
-          <p class="title__song">${elem["artist"]}</p>
+          <p class="title__album">${elem.title}</p>
+          <p class="title__song">${elem.artist}</p>
         </div>
       </div>
-    <div class="song__duration">${elem["time"]}</div>
+    <div class="song__duration">${elem.time}</div>
     </div>
   </li>`
   }
